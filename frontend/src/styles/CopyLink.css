@@ -1,0 +1,25 @@
+.copy-icon:hover {
+  cursor: pointer;
+}
+
+.copied-icon {
+  animation: copied-icon 5.1s;
+}
+
+@keyframes copied-icon {
+  0% {
+    transform: scale(0.7);
+  }
+  4% {
+    transform: scale(1.4);
+  }
+  10% {
+    transform: scale(1);
+  }
+  90% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.5);
+  }
+}
