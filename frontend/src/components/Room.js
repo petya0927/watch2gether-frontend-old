@@ -12,7 +12,7 @@ import { useSelector } from "react-redux";
 import Footer from "./Footer";
 
 const Room = () => {
-  const baseUrl = process.env.NODE_ENV === 'development' ? 'http://localhost:3030' : 'https://petya0927-watch2gether.herokuapp.com';
+  const baseUrl = process.env.NODE_ENV === 'development' ? 'http://localhost:3030' : 'https://watch2gether-far81ysz1-petya0927.vercel.app';
   const currentUrl = window.location.href;
 
   const [room, setRoom] = useState(null);
