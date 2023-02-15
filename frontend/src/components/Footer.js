@@ -15,7 +15,7 @@ const Footer = () => {
       <p className='text-white'>
         {/* <FontAwesomeIcon icon={faCodeBranch} className="mr-5"/> */}
         <span>
-          Version: 1.0.12
+          Version: 1.0.14
         </span>
       </p>
     </div>
