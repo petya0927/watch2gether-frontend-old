@@ -83,7 +83,7 @@ const CreateRoom = () => {
             <h4 className="mb-1">Create a room here:</h4>
             <p className='mb-2'>Paste the link of the video here you want to watch</p>
             <div className='row mb-4 justify-content-center'>
-              <input type="text" className="mt-2 w-auto input form-control bg-transparent mr-15" placeholder="Video link here" onChange={e => setLink(e.target.value)} />
+              <input type="text" className="mt-2 w-auto input form-control bg-transparent mr-15" placeholder="Youtube video link here" onChange={e => setLink(e.target.value)} />
               <button className="mt-2 w-auto btn btn-light fw-semibold rounded" onClick={createRoom} disabled={!(userName && link)}>
                 {!isCreating && 
                   <span>

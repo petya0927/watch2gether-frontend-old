@@ -146,19 +146,16 @@ const Room = () => {
 
   return (
     <div className="h-100 d-flex flex-column p-4">
-      <Link to="/">
-        <button className="btn btn-light fw-semibold">
-          <FontAwesomeIcon icon={faArrowLeftLong} className="mr-5" />
-          Back
-        </button>
+      <Link to="/" className="btn btn-light fw-semibold" style={{maxWidth: '100px'}}>
+        <FontAwesomeIcon icon={faArrowLeftLong} className="mr-5" />
+        Back
       </Link>
       { userName &&
         <div className={`row align-content-center justify-content-center align-items-center pt-5 ${window.innerWidth < 922 ? 'mw-100' : 'h-100'}`} >
           {room && socket &&
-            <div className="col-12 col-lg-7 p-0 pe-lg-3 pb-3 pb-lg-0">
+            <div className="col-12 col-lg-7 p-0 pe-lg-3 pb-3 pb-lg-0 d-flex justify-content-center">
               <ReactPlayer
                 id="player"
-                className="w-100"
                 style={{width: "100%", height: "430px", maxHeight: "60vw"}}
                 ref={videoRef}
                 url={room.link}
