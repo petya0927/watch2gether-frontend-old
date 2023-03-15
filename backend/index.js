@@ -16,7 +16,6 @@ app.use((req, res, next) => {
 
 app.use(express.json());
 app.use(routes);
-// app.listen(process.env.PORT || 3030);
 
 // Socket.io middleware
 const server = http.createServer(app);

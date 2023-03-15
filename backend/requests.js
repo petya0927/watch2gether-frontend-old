@@ -10,7 +10,7 @@ router.get('/', (req, res, next) => {
   });
 });
 
-const createRoom = (req, res, next) => {
+router.post('/create-room', (req, res, next) => {
   const id = Math.ceil(Math.random() * 1000000);
   if (findRoom(id)) {
     res.status(500).send('Room already exists');
@@ -23,9 +23,7 @@ const createRoom = (req, res, next) => {
   res.json({ 
     roomId: id
   });
-}
-
-router.post('/create-room', allowCors(createRoom));
+});
 
 router.get('/room/:roomId', (req, res, next) => {
   const roomId = req.params.roomId;
@@ -180,7 +178,7 @@ const allowCors = fn => async (req, res) => {
   return await fn(req, res)
 }
 
-module.exports = router;
+module.exports = allowCors(router);
 
 module.exports.onConnection = onConnection;
 module.exports.playVideoEvent = playVideoEvent;
