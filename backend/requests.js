@@ -5,7 +5,7 @@ const Room = require('./Room');
 const rooms = [];
 
 router.get('/', (req, res, next) => {
-  res.status(200).send('Hello World');
+  res.send('Hello World');
 });s
 
 router.post('/create-room', (req, res, next) => {
