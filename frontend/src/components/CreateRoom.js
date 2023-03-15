@@ -9,7 +9,7 @@ import { setAvatar } from '../store/avatarSlice';
 import Footer from './Footer';
 
 const CreateRoom = () => {
-  const baseUrl = process.env.NODE_ENV === 'development' ? `http://localhost:3030` : 'https://watch2gether-petya0927.vercel.app';
+  const baseUrl = process.env.NODE_ENV === 'development' ? `http://localhost:3030` : 'https://watch2gether-eight.vercel.app';
 
   const userName = useSelector(state => state.userName);
   const avatar = useSelector(state => state.avatar);
