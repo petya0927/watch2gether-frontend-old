@@ -8,7 +8,7 @@ router.get('/', (req, res, next) => {
   res.json({
     message: 'Hello World'
   });
-});s
+});
 
 router.post('/create-room', (req, res, next) => {
   const id = Math.ceil(Math.random() * 1000000);
