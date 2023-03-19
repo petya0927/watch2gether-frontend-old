@@ -1,4 +1,4 @@
-# watch2gether
+# watch2gether-frontend
 
 A minimalistic, websockets-based webapp, where you can watch videos 2gether with your friends.
 
