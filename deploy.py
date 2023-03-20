@@ -1,7 +1,5 @@
 import os
 
-os.chdir('./frontend')
-
 with open('src/components/Footer.js', 'r') as f:
   filedata = f.read()
 version_line = [line.strip() for line in filedata.split('\n') if "Version" in line][0]
